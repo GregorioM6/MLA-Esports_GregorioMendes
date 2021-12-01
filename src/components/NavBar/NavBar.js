@@ -3,6 +3,7 @@ import './NavBar.css';
 import logo from '../../assets/MLA_LOGO.png';
 import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
+import CartWidget from '../CartWidget/CartWidget';
 
 export default function NavBar() {
     return(
@@ -18,8 +19,10 @@ export default function NavBar() {
                     <li><Button variant="outlined">Contacto</Button></li>
                     <li><Button variant="outlined">Empresa</Button></li>
                     <li><Button variant="outlined">Novedades</Button></li>
-                </ul>  
+                </ul>
+                <CartWidget/> 
             </nav>
         </AppBar>
+        
     )
 }

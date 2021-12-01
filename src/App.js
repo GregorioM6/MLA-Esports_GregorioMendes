@@ -1,16 +1,14 @@
 
 // import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar/NavBar'
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function App() {
   return (
     <div className="App">
         <NavBar />
-        <p>
-          Nueva pagina de MLA Esports
-        </p>
-        
+        <ItemListContainer/>
     </div>
   );
 }
