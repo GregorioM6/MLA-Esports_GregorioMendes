@@ -32,3 +32,8 @@ nav button {
     color: black !important;
     border-color: black !important;
 }
+
+img{
+    width: 150px;
+    height: 150px;
+}
