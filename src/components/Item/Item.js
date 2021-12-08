@@ -12,7 +12,6 @@
 // }
 // export default Item;
 
-import { maxHeight } from '@mui/system';
 import React from 'react';
 
 export const Item = ({ id, name, description, price, stock, color, img}) => {
