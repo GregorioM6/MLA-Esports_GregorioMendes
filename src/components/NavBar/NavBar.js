@@ -4,6 +4,7 @@ import logo from '../../assets/MLA_LOGO.png';
 import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
 import CartWidget from '../CartWidget/CartWidget';
+import { Link } from 'react-router-dom'
 
 export default function NavBar() {
     return(
@@ -13,12 +14,36 @@ export default function NavBar() {
                     <img src={logo} alt="Logo ecommerce"/>
                 </div>
                 <ul>
-                    <li><Button variant="outlined">Home</Button></li>
-                    <li><Button variant="outlined">Equipos</Button></li>
-                    <li><Button variant="outlined">Compras</Button></li>
-                    <li><Button variant="outlined">Contacto</Button></li>
-                    <li><Button variant="outlined">Empresa</Button></li>
-                    <li><Button variant="outlined">Novedades</Button></li>
+                    <li>
+                            <Link to="/">
+                                <Button variant="outlined">Home</Button>
+                            </Link>
+                    </li>
+                    <li>
+                            <Link to="/equipos">
+                                <Button variant="outlined">Equipos</Button>
+                            </Link>
+                    </li>
+                    <li>
+                            <Link to="/compras">
+                                <Button variant="outlined">Compras</Button>
+                            </Link>
+                    </li>
+                    <li>
+                            <Link to="/contacto">
+                                <Button variant="outlined">Contacto</Button>
+                            </Link>
+                    </li>
+                    <li>
+                            <Link to="/mpresa">
+                                <Button variant="outlined">Empresa</Button>
+                            </Link>
+                    </li>
+                    <li>
+                            <Link to="/novedades">
+                                <Button variant="outlined">Novedades</Button>
+                            </Link>
+                    </li>
                 </ul>
                 <CartWidget/> 
             </nav>
