@@ -37,7 +37,7 @@ export default function NavBar() {
                             </Link>
                     </li>
                     <li>
-                            <Link to="/mpresa">
+                            <Link to="/empresa">
                                 <Button variant="outlined">Empresa</Button>
                             </Link>
                     </li>
