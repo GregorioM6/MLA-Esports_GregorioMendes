@@ -11,7 +11,9 @@ export default function NavBar() {
         <AppBar position="static">
             <nav>
                 <div className="container-logo">
+                <Link to="/">
                     <img src={logo} alt="Logo ecommerce"/>
+                    </Link>
                 </div>
                 <ul>
                     <li>
