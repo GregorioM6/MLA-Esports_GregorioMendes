@@ -7,12 +7,14 @@ import EquiposPage from '../../Pages/EquiposPage/EquiposPage';
 import ContactoPage from '../../Pages/ContactoPage/ContactoPage';
 import EmpresaPage from '../../Pages/EmpresaPage/EmpresaPage';
 import NovedadesPage from '../../Pages/NovedadesPage/NovedadesPage';
+import ItemDetailPage from '../../Pages/ItemDetailPage/ItemDetailPage';
 
 export default function AppRouter() {
     return (
         <BrowserRouter>
             <NavBar />
                 <Routes>
+                <Route path='/products/:id' element={<ItemDetailPage/>} />
                 <Route path='/compras' element={<ComprasPage/>} />
                 <Route path='/equipo' element={<EquiposPage/>} />
                 <Route path='/contacto' element={<ContactoPage/>} />
