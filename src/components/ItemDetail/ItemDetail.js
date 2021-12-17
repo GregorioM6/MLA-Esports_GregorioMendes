@@ -9,9 +9,7 @@ export const ItemDetail = ({ item }) => {
     return (
         <div className="row justify-content-center">
             <div className="m-3">
-                
                 { item.loading && <p>Loading...</p> }
-
                 { !item.loading &&
                     <div className="col animate__animated animate__fadeIn">
                         <div className="card border-dark" style={cardStyle}>

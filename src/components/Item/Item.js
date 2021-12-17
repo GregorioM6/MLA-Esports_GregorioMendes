@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom'
 
 export const Item = ({ id, name, description, price, stock, color, img}) => {
 
@@ -17,6 +19,10 @@ export const Item = ({ id, name, description, price, stock, color, img}) => {
                     <p className="card-text">{ color }</p>
                     <p className="card-text text-end text-muted">$ { price }</p>
                 </div>
+                <Button variant="contained" color="background" style={{marginBottom: 10, textDecoration: 'none'}}>
+                            <Link to={`/products/${img}`} style={{textDecoration: 'none'}}>Ver Detalle</Link>
+                        </Button>
+                        <Button variant="contained" color="background">Agregar al carrito</Button>
             </div>
         </div>
     )
