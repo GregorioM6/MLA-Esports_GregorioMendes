@@ -3,7 +3,7 @@ import './NavBar.css';
 import logo from '../../assets/MLA_LOGO.png';
 import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
-import CartWidget from '../CartWidget/CartWidget';
+import {CartWidget} from '../CartWidget/CartWidget';
 import { Link } from 'react-router-dom'
 
 export default function NavBar() {

@@ -14,17 +14,13 @@ export const ItemCount = ({stock, initial, onAdd}) => {
         if( contador < stock ) {
             setContador( contador + 1 );
         }
-
     }
 
     const minusHandler = () => {
-        
         if ( contador > 1 ) {
             setContador(contador -1);
         }
-
     }
-
     return (
         <>
             <div className="container col-xl-3" style={styles}>
@@ -40,16 +36,12 @@ export const ItemCount = ({stock, initial, onAdd}) => {
                         <button className="btn btn-secondary" type="button" onClick={plusHandler}><strong>+</strong></button>
                     </div>
                 </div>
-
                 <div className="row">
                     <div className="d-grid gap-2 mb-2">
                         <button className="btn btn-outline-danger" type="button" onClick={() => onAdd(contador)}>Agregar al carrito</button>
                     </div>
                 </div>
-
             </div>
-
         </>
     );
-
 }
